@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FilipDev - Coming Soon</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.jpg"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	
+	<div class="size1 bg0 where1-parent">
+		<!-- Coutdown -->
+		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
+			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
+				<p id="demo" style="color:rgb(255, 255, 255); font-size:350%; font-family: sans-serif;"></p> <br> <p style="color:rgb(255, 255, 255); font-style: italic;">7 Octombrie 2023	</p>
+			</div>
+		</div>
+
+
+		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
+			<!-- <div class="wrap-pic1">
+				<img src="images/icons/logo.jpg" alt="LOGO">
+			</div> -->
+
+			<div class="p-t-50 p-b-60">
+				<p class="m1-txt1 p-b-36">
+					Our website is <span class="m1-txt2">Coming Soon</span>
+					<br>
+					<br>
+					<span class="m1-txt2" style="color: black;">FilipDev</span>.ro
+				</p>
+
+				
+
+				<p class="s2-txt3 p-t-18">
+				
+				</p>
+			</div>
+
+			<div class="flex-w">
+				<a href="https://www.facebook.com/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a href="https://www.youtube.com/" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
+					<i class="fa fa-youtube-play"></i>
+				</a>
+				<a href="https://www.instagram.com/fwn_pro/" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<p class="s2-txt3 p-t-18">
+					All rights reserverd, FilipDev | Website developed by Filip Neatu
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Oct 7, 2023 15:30:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get today's date and time
+		  var now = new Date().getTime();
+		
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+		
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		  // Display the result in the element with id="demo"
+		  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+		
+		  // If the count down is finished, write some text
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "COMING IN A FEW MINUTES";
+		  }
+		}, 1000);
+		</script>
+<!--===============================================================================================-->
+
+
+</body>
+</html>
